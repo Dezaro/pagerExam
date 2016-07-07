@@ -40,14 +40,14 @@ class Pager {
   }
 
   private function __construct0() {
-    $this->fectData(50);
+    $this->fetchData(50);
   }
 
   private function __construct1($data) {
-    $this->fectData($data);
+    $this->fetchData($data);
   }
 
-  private function fectData($n) {
+  private function fetchData($n) {
     $i = 0;
     while($i < $n) {
       $this->dataList[$i] = 'examData ' . ($i + 1);
