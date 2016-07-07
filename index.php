@@ -38,7 +38,8 @@
     </form>
     <?php
     require_once '/Pager.php';
-    $pager = new Pager();
+    $pager = new Pager(124);
+//    $pager = new Pager();
     $pager->draw();
     ?>
   </center>
