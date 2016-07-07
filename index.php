@@ -1,33 +1,11 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <style>
-      ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: inline;
-      }
-      li {
-        margin: 4px;
-        display: inline;
-      }
-      table {
-        margin: 4px;
-        border: 1px solid black;
-      }
-      tr {
-        margin: 4px;
-        border: 1px solid black;
-      }
-      th {
-        margin: 4px;
-        border: 1px solid black;
-      }
-      td {
-        margin: 4px;
-        border: 1px solid black;
-      }
-    </style>
+    <title>Pagination Exam</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="http://localhost/viscompExam/" />
+    <link type="text/css" rel="stylesheet" href="style.css">
   </head>
   <body>
   <center>
@@ -39,7 +17,7 @@
     <?php
     require_once '/Pager.php';
     $pager = new Pager(124);
-//    $pager = new Pager();
+    //    $pager = new Pager();
     $pager->draw();
     ?>
   </center>
